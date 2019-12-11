@@ -13,81 +13,7 @@ import {auth, createUserProfileDocument} from './firebase/firebase.utis';
 import { setCurrentUser } from './redux/user/user.action';
 import { selectCurrentUser } from './redux/user/user.selectors';
 
-
-
-
 import './App.css';
-
-
-// let Data =  [
-//         {
-//           id:0,
-//           title: 'Hawaii',
-//           qty: 0,
-//           items: [
-//             {
-//               id: 0,
-//               uid: 'xsyked',
-//               title: 'Hawaii',
-//               size: 'Small',
-//               price: 7.5,
-//               qty: 0
-              
-//             },
-//             {
-//               id: 1,
-//               uid: 'xcswad',
-//               title: 'Hawaii',
-//               size: 'Large',
-//               price: 9.5,
-//               qty: 0
-//             },
-//             {
-//               id: 2,
-//               uid: 'xcswqd',
-//               title: 'Hawaii',
-//               size: 'Famiry',
-//               price: 14.5,
-//               qty: 0
-//             }
-//           ]
-          
-//         },
-//         {
-//           id:1,
-//           title: 'Supermi',
-//           qty: 0,
-//           items: [
-//             {
-//               id: 0,
-//               uid: 'xswzqd',
-//               title: 'Supermi',
-//               size: 'Small',
-//               price: 7.5,
-//               qty: 0
-              
-//             },
-//             {
-//               id: 1,
-//               uid: 'eswzqd',
-//               title: 'Supermi',
-//               size: 'Large',
-//               price: 9.5,
-//               qty: 0
-//             },
-//             {
-//               id: 2,
-//               uid: 'tswzqd',
-//               title: 'Supermi',
-//               size: 'Famiry',
-//               price: 14.5,
-//               qty: 0
-//             }
-//           ]
-//         }
-     
-// ]
-
 
 class App extends React.Component {
 
@@ -118,52 +44,7 @@ class App extends React.Component {
   componentWillUnmount() {
     this.unsubscribeFromAuth()
   }
-  // const [data, setData] = useState(Data)
-  // const [smallpizza, setSmallPizza] = useState({})
-  // const [title, setTitle] = useState('');
-  // const [price, setPrice] = useState(null);
-  // const [cart, setCart] = useState([]);
-  // const [isButtonDisabled, setButtonDisable] = useState(false);
-
-
-  // const onChange = (e, id) => {
-    
-  //   Data[id].qty = e.target.value;
-
-  //   setData([...data, Data])
-  //   // data.forEach(item => {
-  //   //   console.log(item.id)
-  //   //   if(item.id === id) {
-  //   //     _data[id].qty = e.target.value;
-  //   //     let Data = [];
-  //   //     Data.push(item)
-  //   //     console.log(Data)
-  //   //   }
-      
-  //   // })
-    
-
-
-  // }
-
-  // const clickHandler = (e ,i, product) => {
-  //    e.preventDefault()
-    
-  //    const cartItems = cart;
-  //    let productAlreadyInCart = false;
-  //    cartItems.forEach(item => {
-  //      if(item.uid === product.uid) {
-  //        productAlreadyInCart = true;
-  //      }
-  //    });
-  //    if(!productAlreadyInCart) {
-       
-  //       setCart([...cart, product])
-  //    }
-
-  //    return cartItems;
-    
-  // }
+ 
   render() {
     return (
         

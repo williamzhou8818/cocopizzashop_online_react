@@ -23,11 +23,3 @@ const CollectionPreview = ({title, items}) => (
 
 
 export default CollectionPreview;
-
-
- {/* {item.name} 
-                            {
-                                item.select.map((subitem) => (
-                                <div>{subitem.size} | {subitem.price}</div>
-                                ))
-                            } */}
