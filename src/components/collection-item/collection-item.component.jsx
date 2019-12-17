@@ -98,29 +98,29 @@ const CollectionItem = ({id, name, price, imageUrl, addItem, select, toppings}) 
                        +Extra
                     </button>
                     <Dialog
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="alert-dialog-title"
-        aria-describedby="alert-dialog-description"
-      >
-        <DialogTitle id="alert-dialog-title">{"Customise your favorite Pizza toppings"}</DialogTitle>
-        <DialogContent>
-          <DialogContentText id="alert-dialog-description">
-            <div>
-                    Side Notes: <br/>
-                    <textarea rows="4" cols="50"  type="text" onChange={ e => setSideNotes(e.target.value)} value={sideNotes} />
-            </div>
-          </DialogContentText>
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={handleClose} color="primary">
-            clear
-          </Button>
-          <Button onClick={() => handleSave()} color="primary" autoFocus>
-            Save
-          </Button>
-        </DialogActions>
-      </Dialog>
+                    open={open}
+                    onClose={handleClose}
+                    aria-labelledby="alert-dialog-title"
+                    aria-describedby="alert-dialog-description"
+                  >
+                        <DialogTitle id="alert-dialog-title">{"Customise your favorite Pizza toppings"}</DialogTitle>
+                        <DialogContent>
+                          <DialogContentText id="alert-dialog-description">
+                            <div>
+                                    Side Notes: <br/>
+                                    <textarea rows="4" cols="50"  type="text" onChange={ e => setSideNotes(e.target.value)} value={sideNotes} />
+                            </div>
+                          </DialogContentText>
+                        </DialogContent>
+                        <DialogActions>
+                          <Button onClick={handleClose} color="primary">
+                            clear
+                          </Button>
+                          <Button onClick={() => handleSave()} color="primary" autoFocus>
+                            Save
+                          </Button>
+                        </DialogActions>
+                      </Dialog>
                     </span>
                     {/* <span className='name'  >
                         {
@@ -143,7 +143,7 @@ const CollectionItem = ({id, name, price, imageUrl, addItem, select, toppings}) 
                                 <span className='price'> ${ subItem.price } </span>
         
                                 </div>
-                                <div>
+                                <div className='add_button'>
                                         <button type="button" onClick={() => addItem(_subItem)}>ADD</button>
                                 </div>
                                 

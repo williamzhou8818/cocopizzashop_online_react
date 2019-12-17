@@ -13,7 +13,8 @@ import {auth, createUserProfileDocument} from './firebase/firebase.utis';
 import { setCurrentUser } from './redux/user/user.action';
 import { selectCurrentUser } from './redux/user/user.selectors';
 
-import './App.css';
+// import './App.css';
+import { GlobalStyle } from './global.styles';
 
 class App extends React.Component {
 
@@ -49,6 +50,7 @@ class App extends React.Component {
     return (
         
       <div>
+        <GlobalStyle />
         <Header />
         <Switch>
           <Route exact path='/' component={HomePage} />

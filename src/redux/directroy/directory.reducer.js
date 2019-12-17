@@ -4,13 +4,13 @@ const INTIAL_STATE = {
             title: 'Classic Pizza',
             imageUrl: 'https://firebasestorage.googleapis.com/v0/b/cocopizzaonline.appspot.com/o/classic-pizzas%2Fchicken-supreme.jpg?alt=media&token=9c0f690a-35da-44eb-a145-86ccb0a05ef4',
             id: 1,
-            linkUrl: 'shop/classicpizza'
+            linkUrl: 'shop/classicpizzas'
         },
         {
             title: 'Gourmet Pizza',
             imageUrl: 'https://cocopizzashop.com.au/assets/imgs/bruna-branco-t8hTmte4O_g-unsplash.png',
             id: 2,
-            linkUrl: 'shop/gourmetpizza'
+            linkUrl: 'shop/gourmetpizzas'
 
         },
         {
